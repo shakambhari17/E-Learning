@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1> E-Learning Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#progress">Progress</a></li>
+                <li><a href="#certificate">Certificate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="courses" class="content-section">
+        <h2>Available Courses</h2>
+        <div class="course-list">
+            <div class="course">
+                <h3>Web Development</h3>
+                <p>Learn HTML, CSS, and JavaScript</p>
+                <button onclick="startCourse('Web Development')">Start Course</button>
+            </div>
+            <div class="course">
+                <h3>Data Science</h3>
+                <p>Introduction to Python and Machine Learning</p>
+                <button onclick="startCourse('Data Science')">Start Course</button>
+            </div>
+            <div class="course">
+                <h3>Mobile App Development</h3>
+                <p>Learn how to build apps for iOS and Android</p>
+                <button onclick="startCourse('Mobile App Development')">Start Course</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="progress" class="content-section">
+        <h2>Progress Tracking</h2>
+        <div class="progress">
+            <label for="progress-bar">Progress</label>
+            <progress id="progress-bar" value="50" max="100"></progress>
+            <p>50% Completed</p>
+        </div>
+    </section>
+
+    <section id="certificate" class="content-section">
+        <h2>Course Completion Certificate</h2>
+        <button onclick="generateCertificate()">Get Certificate</button>
+        <div id="certificate-output"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 CodTech. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
